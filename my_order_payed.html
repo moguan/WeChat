@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>泸州客运中心站</title>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,telephone=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+	
+		<link rel="stylesheet" href="css/weui.css">
+		<link rel="stylesheet" href="css/jquery-weui.css">
+		<link rel="stylesheet" type="text/css" href="css/index_medium.css"/>
+		<!--<link rel="stylesheet" media="screen and (max-width: 750px)" href="css/index_medium.css" />
+		<link rel="stylesheet" media="screen and (min-width: 750px)" href="css/index_max.css" />-->
+ </head>
+  <body ontouchstart style=" background: #f6f5f9;">
+  	  <header>
+  	  	<div class="goback_btn"><a href="javascript:history.go(-1)"></a></div>
+  	  	<h2 class="head_title">我的订单</h2>
+  	  	<div class="gohome_btn"><a href="index.html"></a></div>
+  	  </header>
+  	  <div class="content">
+  	  	<div class="weui_tab">
+		      <div class="weui_navbar">
+		        <a class="weui_navbar_item " style="position: relative;" href="my_order.html">
+		        	<img src="img/notpay_order@3x.png" alt="" />
+		        	<p>未支付</p>
+		        	<i class="circle">6</i>
+		        </a>
+		        <a class="weui_navbar_item weui_bar_item_on" href="#">
+		        	<img src="img/pay_order@3x.png" alt="" />
+		        	<p>已支付</p>
+		        </a>
+		        <a class="weui_navbar_item" href="my_order_all.html">
+		        	<img src="img/history_order@3x.png" alt="" />
+		        	<p>历史订单</p>
+		        </a>
+		      </div>  <!--weui_navbar  end-->
+		      <div class="weui_tab_bd" style="padding-top: 56px;">
+		      	 <ul class="order_list">
+		      	 	<a href="order_details.html">
+		      	 	<li class="order_list_head">
+		      	 		<div class="flot_l order_list_num">订单号：<span>18731245</span></div>
+		      	 		<i class="flot_r order_list_status">已支付</i>
+		      	 		<p class="clear"></p>
+		      	 	</li>
+		      	 	<li class="order_list_body">
+		      	 		<div class="flot_l order_list_station">
+		      	 			<h2>泸州中心站-重庆北站</h2>
+		      	 			<p>发车：2016/05/22 15:09</p>
+		      	 		</div>
+		      	 		<div class="flot_r order_list_ticket">
+		      	 			<h2><i>￥</i><span>268.00</span>/张</h2>
+		      	 			<p>2张票</p>
+		      	 		</div>
+		      	 		<p class="clear"></p>
+		      	 	</li>
+		      	 	</a>
+		      	 	<li class="order_list_foot">
+		      	 		<div class="flot_l order_list_time">有效：<span><i>7</i>分<i>24</i>秒</span></div>
+		      	 		<div class="flot_r order_list_opera"><a href="order_details.html" class="weui_btn weui_btn_plain_primary order_list_btn order_list_btn_refundticket">在线退票</a></div>
+		      	 		<p class="clear"></p>
+		      	 	</li>
+		      	 </ul>
+		      	 </ul>
+		      	 <ul class="order_list">
+		      	 	<a href="order_details.html">
+		      	 	<li class="order_list_head">
+		      	 		<div class="flot_l order_list_num">订单号：<span>18731245</span></div>
+		      	 		<i class="flot_r order_list_status">已支付</i>
+		      	 		<p class="clear"></p>
+		      	 	</li>
+		      	 	<li class="order_list_body">
+		      	 		<div class="flot_l order_list_station">
+		      	 			<h2>泸州中心站-重庆北站</h2>
+		      	 			<p>发车：2016/05/22 15:09</p>
+		      	 		</div>
+		      	 		<div class="flot_r order_list_ticket">
+		      	 			<h2><i>￥</i><span>268.00</span>/张</h2>
+		      	 			<p>2张票</p>
+		      	 		</div>
+		      	 		<p class="clear"></p>
+		      	 	</li>
+		      	 	</a>
+		      	 	<li class="order_list_foot">
+		      	 		<div class="flot_l order_list_time">有效：<span><i>7</i>分<i>24</i>秒</span></div>
+		      	 		<div class="flot_r order_list_opera"><a href="order_details.html" class="weui_btn weui_btn_plain_primary order_list_btn order_list_btn_refundticket">在线退票</a></div>
+		      	 		<p class="clear"></p>
+		      	 	</li>
+		      	 </ul>
+		      </div>  <!--weui_tab_bd  end-->
+	     </div>  <!--weui_tab  end-->
+    </div>  <!--content  end-->
+    <div class="weui_tabbar" style="position: fixed; border-bottom: 0; left: 0;">
+	      <a href="index.html" class="weui_tabbar_item ">
+	      <div class="weui_tabbar_icon">
+	        <img src="img/tab_bar_car@3x.png" alt="">
+	      </div>
+	      <p class="weui_tabbar_label">查询汽车票</p>
+	    </a>
+	    <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on">
+	      <div class="weui_tabbar_icon">
+	        <img src="img/tab_bar_ticket_a@3x.png" alt="">
+	      </div>
+	      <p class="weui_tabbar_label">我的订单</p>
+	    </a>
+	    <a href="person_center.html" class="weui_tabbar_item">
+	      <div class="weui_tabbar_icon">
+	        <img src="img/tab_bar_user@3x.png" alt="">
+	      </div>
+	      <p class="weui_tabbar_label">个人中心</p>
+	    </a>
+	  </div>
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="js/jquery-weui.min.js"></script>
+  </body>
+</html>

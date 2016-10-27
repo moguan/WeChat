@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>泸州客运中心站</title>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+	
+		<link rel="stylesheet" href="css/weui.css">
+		<link rel="stylesheet" href="css/jquery-weui.css">
+		<link rel="stylesheet" type="text/css" href="css/index_medium.css"/>
+		<!--<link rel="stylesheet" media="screen and (max-width: 750px)" href="css/index_medium.css" />
+		<link rel="stylesheet" media="screen and (min-width: 750px)" href="css/index_max.css" />-->
+ </head>
+  <body ontouchstart style=" background: #f6f5f9;">
+  	  <header>
+  	  	<div class="goback_btn"><a href="javascript:history.go(-1)"></a></div>
+  	  	<h2 class="head_title">关联/创建账户</h2>
+  	  	<div class="gohome_btn"><a href="index.html"></a></div>
+  	  </header>
+  	  <div class="content">
+  	  	<div class="weui_cells weui_cells_form rider_add_form">
+			      <div class="weui_cell weui_cells_access edit_ph_num" onclick="show_verify();">
+			        <div class="weui_cell_hd"><label class="weui_label">手机号</label></div>
+			        <div class="weui_cell_bd weui_cell_primary">
+			          <input class="weui_input" type="tel"  placeholder="请输入您的手机号" id="tel_num">
+			        </div>
+			      </div> 
+			      <div class="weui_cell">
+			        <div class="weui_cell_hd"><label class="weui_label">短信验证码</label></div>
+			        <div class="weui_cell_bd weui_cell_primary">
+			          <input class="weui_input" type="tel" placeholder="">
+			        </div>
+			        <div class="weui_cell_ft">
+			          <a href="javascript:0" class="weui_btn weui_btn_primary get_verification get_verification_a">免费获取</a>
+			        </div>
+			      </div>
+			   </div>  <!--weui_cells  end-->
+      <a href="create_user.html" class="weui_btn weui_btn_primary search_btn">立即关联/创建</a>
+	  <div class="reminder_box" style="margin-top: 20px;">
+      	 <h2>温馨提示:</h2>
+      	 <ul class="reminder_content">
+      	 	<li>1、如已在App、Web等其他渠道创建账户，根据手机号关联即可统一管理个人资料、车票订票、乘车人信息。</li>
+      	 	<li>2、如无账户，将为您创建一个可用于App、Web等所有渠道使用的新账户。</li>
+      	 </ul>
+      </div>  <!--reminder_box  end-->
+    </div>  <!--content  end-->
+  </body>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+</html>
+

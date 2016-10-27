@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>泸州客运中心站</title>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+	
+		<link rel="stylesheet" href="css/weui.css">
+		<link rel="stylesheet" href="css/jquery-weui.css">
+		<link rel="stylesheet" type="text/css" href="css/index_medium.css"/>
+		<!--<link rel="stylesheet" media="screen and (max-width: 750px)" href="css/index_medium.css" />
+		<link rel="stylesheet" media="screen and (min-width: 750px)" href="css/index_max.css" />-->
+ </head>
+  <body ontouchstart style=" background: #f6f5f9;">
+  	  <header>
+  	  	<div class="goback_btn"><a href="javascript:history.go(-1)"></a></div>
+  	  	<h2 class="head_title">订单支付</h2>
+  	  	<div class="gohome_btn"><a href="index.html"></a></div>
+  	  </header>
+  	  <div class="content">
+  	  	<div class="tip_box">请在<span>9分59秒</span>内完成支付，超时自动取消订单</div> <!--tip_box  end-->
+	      <div class="order_ticket_box">
+	      	<ul class="order_ticket_main">
+	      		<li class="order_ticket_l">
+	      			<h2>泸州</h2>
+	      			<h4>泸州客运中心站</h4>
+	      		</li>
+	      		<li class="order_ticket_c">
+	      			<p>明天 08：22</p>
+	      			<span>2016-05-06 周五</span>
+	      			<div style="height: 20px;"></div>
+	      		</li>
+	      		<li class="order_ticket_r">
+	      		    <h2>重庆</h2>
+	      			  <h4>重庆南客运中心站</h4>
+	      		</li>
+	      	</ul> <!--order_ticket_main  end-->
+	      	<ul class="order_ticket_detail">
+	      		<li class="order_ticket_detail_l">
+	      			<div>车次：<span>0311(固定班)</span></div>
+	      			<div>车型：<span>中型高二级</span></div>
+	      		</li>
+	      		<li class="order_ticket_detail_r">
+	      			<p>票单价(元)</p>
+	      			<h3>￥103.50</h3>
+	      		</li>
+	      	    <p class="clear"></p>
+	      	</ul>
+	      </div>  <!--order_ticket_box  end-->
+	      <div class="weui_cells weui_cells_access">
+		    <div class="weui_cell order_info_box">
+	          <div class="weui_cell_hd"><img src="img/adult_icon@2x.png" alt="" style="width:20px;margin-right:5px;display:block"></div>
+	          <div class="weui_cell_bd weui_cell_primary" style="padding-left: 10px;">
+	          	<h3>大李子<span class="station_status">保</span></h3>
+	            <p>成人票</p>
+	          </div>
+	          <div class="weui_cell_bd weui_cell_primary">
+	          	 <p>187454546454</p>
+	          	 <h4 class="rider_id">5101343142534546</h4>
+	          </div>  <!--order_info_box  end-->
+	      </div><div class="weui_cell order_info_box">
+	          <div class="weui_cell_hd"><img src="img/children_icon@2x.png" alt="" style="width:20px;margin-right:5px;display:block"></div>
+	          <div class="weui_cell_bd weui_cell_primary" style="padding-left: 10px;">
+	          	<h3>小李子</h3>
+	            <p>儿童票</p>
+	          </div>
+	          <div class="weui_cell_bd weui_cell_primary">
+	          	 <p>187454546454</p>
+	          	 <h4 class="rider_id">——</h4>
+	          </div>  <!--order_info_box  end-->
+	      </div>
+	    </div>
+	  	<div class="weui_cells weui_cells_access">
+		    <div class="weui_cell">
+		      <div class="weui_cell_hd"><img src="img/insurance_icon@3x.png" alt="" style="width:20px;margin-right:5px;display:block"></div>
+		      <div class="weui_cell_bd weui_cell_primary">
+		        <p>乘车保险</p>
+		        <p class="insurance_quota">保险额度:￥30000</p>
+		      </div>
+		      <div class="weui_cell_t red_font"><span style="padding-right: 0;">￥3.00*1</span></div>
+		    </div>
+	   </div> 
+    </div>  <!--content  end-->
+    <ul class="menu">
+      <li class="menu_l" ontouchstart="show_price_details(this);">总计<span>￥</span><b>103.50</b><img src="img/arrow_top_red@3x.png"/></li>
+      <a href="order_payofway.html"><li class="menu_r">去支付</li></a>
+    </ul>
+    <ul class="price_details_box">
+    	<li class="price_details_head">费用明细</li>
+    	<li>成人票<span>￥105.00*2人</span></li>
+    	<li>儿童票<span>￥51*2人</span></li>
+    	<li>服务费<span>￥3.00*2人</span></li>
+    	<li>保险费<span>￥2.00*1人</span> <i style="font-style: normal; font-size: 0.5rem;">（儿童不参保）</i></li>
+    </ul>  <!--price_details_box end-->
+    
+    <script src="js/jquery-2.1.4.js"></script>
+	<script src="js/jquery-weui.min.js"></script>
+  </body>
+</html>
+<script type="text/javascript">
+//显示关闭总价
+  var show_price_details = function(o){
+  	if($(".price_details_box").is(':hidden')){
+  		$(".price_details_box").toggle(100);
+  		$(o).children("img").attr("src","img/arrow_down_red@3x.png");
+  	}else{
+	   		$(".price_details_box").css("display","none");
+	   		$(o).children("img").attr("src","img/arrow_top_red@3x.png");
+	   	}
+  	
+  }
+  $(document).ready(function(){
+  	var menu_height = $(".menu").height(); 
+    $(".price_details_box").css("bottom",menu_height);
+	});
+
+</script>

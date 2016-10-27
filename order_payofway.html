@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>泸州客运中心站</title>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,telephone=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+	
+		<link rel="stylesheet" href="css/weui.css">
+		<link rel="stylesheet" href="css/jquery-weui.css">
+		<link rel="stylesheet" type="text/css" href="css/index_medium.css"/>
+		<!--<link rel="stylesheet" media="screen and (max-width: 750px)" href="css/index_medium.css" />
+		<link rel="stylesheet" media="screen and (min-width: 750px)" href="css/index_max.css" />-->
+ </head>
+  <body ontouchstart style=" background: #f0eff5;">
+  	  <header>
+  	  	<div class="goback_btn"><a href="javascript:history.go(-1)"></a></div>
+  	  	<h2 class="head_title">订单支付</h2>
+  	  	<div class="gohome_btn"><a href="index.html"></a></div>
+  	  </header>
+  	  <div class="content">
+  	  	<div class="order_pay_timetips">
+  	  		请在<span class="orange_font">9分36秒</span>内完成支付 否者订单将自动取消
+  	  	</div>  <!--order_pay_timetips  end-->
+  	  	<div class="weui_cells weui_cells_radio">
+        <label class="weui_cell weui_check_label" for="x11">
+        	<div class="weui_cell_hd"><img src="img/wechatpay@3x.png" alt="" style="width:30px;margin-right:5px;display:block"></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <p class="insurance">微信支付</p>
+		        <p class="insurance_quota">默认支付方式更快捷</p>
+          </div>
+          <div class="weui_cell_ft">
+            <input type="radio" class="weui_check" name="radio" id="x11" checked="checked">
+            <span class="weui_icon_checked"></span>
+          </div>
+        </label>
+        <label class="weui_cell weui_check_label" for="x12">
+          <div class="weui_cell_hd"><img src="img/alipay@3x.png" alt="" style="width:30px;margin-right:5px;display:block"></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <p class="insurance">支付宝</p>
+		        <p class="insurance_quota">新增支付方式更贴心</p>
+          </div>
+          <div class="weui_cell_ft">
+            <input type="radio" name="radio" class="weui_check" id="x12" >
+            <span class="weui_icon_checked"></span>
+          </div>
+        </label>
+      </div>
+	   <div class="weui_cells">
+		    <div class="weui_cell">
+		      <div class="weui_cell_hd"></div>
+		      <div class="weui_cell_bd weui_cell_primary">
+		        <p class="insurance">实付金额</p>
+		      </div>
+		      <div class="weui_cell_ft red_font" ><span>￥26.00</span></div>
+		    </div>
+	   </div> 
+    </div>  <!--content  end-->
+    <ul class="menu">
+      <a href="pay_success.html"><li class="menu_full">确认支付26.00元</li></a>
+    </ul>
+  <script src="js/jquery-2.1.4.js"></script>
+	<script src="js/jquery-weui.min.js"></script>
+  </body>
+</html>
